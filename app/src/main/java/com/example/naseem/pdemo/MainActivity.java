@@ -176,12 +176,19 @@ public class MainActivity extends AppCompatActivity
 
     private void setupAdapter(){
         List<App> apps=getApps();
+        List<App> apps1=getApps1();
+        List<App> apps2=getApps2();
+        List<App> apps3=getApps3();
+        List<App> apps4=getApps4();
+
         SnapAdapter snapAdapter=new SnapAdapter();
         if(mHorizontal){
             snapAdapter.addSnap(new Snap(Gravity.CENTER_HORIZONTAL,"FEATURED PRODUCTS",apps));
-            snapAdapter.addSnap(new Snap(Gravity.START,"APPLE IPHONES",apps));
-            snapAdapter.addSnap(new Snap(Gravity.END,"CAMERAS",apps));
-            snapAdapter.addSnap(new Snap(Gravity.END,"TABLETS",apps));
+           // snapAdapter.addSnap(new Snap(Gravity.START,"APPLE IPHONES",apps));
+            snapAdapter.addSnap(new Snap(Gravity.START,"APPLE IPHONES",apps1));
+            snapAdapter.addSnap(new Snap(Gravity.END,"CAMERAS",apps2));
+            snapAdapter.addSnap(new Snap(Gravity.END,"TABLETS",apps3));
+            snapAdapter.addSnap(new Snap(Gravity.END,"LATEST ARTICLES",apps4));
             //snapAdapter.addSnap(new Snap(Gravity.CENTER,"Apple Products",apps));
         }else {
 
@@ -196,6 +203,10 @@ public class MainActivity extends AppCompatActivity
 
     private List<App> getApps(){
         List<App> apps=new ArrayList<>();
+
+        apps.add(new App("Apple iPhone 7 plus","AED 2199.00","38 Online Store(s)",R.drawable.apple7plus));
+        apps.add(new App("Apple iPhone 7 plus","AED 18190.00","38 Online Store(s)",R.drawable.canon));
+        apps.add(new App("Apple iPhone 7 plus","AED 1125.60","38 Online Store(s)",R.drawable.microlumia));
         apps.add(new App("Apple iPhone 7 plus","AED 2199.00","38 Online Store(s)",R.drawable.apple7plus));
         apps.add(new App("Apple iPhone 7 plus","AED 18190.00","38 Online Store(s)",R.drawable.canon));
         apps.add(new App("Apple iPhone 7 plus","AED 1125.60","38 Online Store(s)",R.drawable.microlumia));
@@ -205,6 +216,74 @@ public class MainActivity extends AppCompatActivity
         apps.add(new App("Apple iPhone 7 plus","AED 2199.00","38 Online Store(s)",R.drawable.apple7plus));
 
         return apps;
+    }
+
+
+    private List<App> getApps1(){
+        List<App> apps1=new ArrayList<>();
+
+        apps1.add(new App("Apple IPhone X","AED 2199.00","10 Online Store(s)",R.drawable.appleiphone));
+        apps1.add(new App("iPhone 7 Plus-32 Gb,Gold","AED 34229.00","16 Online Store(s)",R.drawable.newmobile));
+        apps1.add(new App("Apple iPhone 6,32 GB","AED 5110.60","18 Online Store(s)",R.drawable.appleiphone6));
+        apps1.add(new App("Apple IPhone X","AED 2199.00","10 Online Store(s)",R.drawable.appleiphone));
+        apps1.add(new App("iPhone 7 Plus-32 Gb,Gold","AED 34229.00","16 Online Store(s)",R.drawable.newmobile));
+        apps1.add(new App("Apple iPhone 6,32 GB","AED 5110.60","18 Online Store(s)",R.drawable.appleiphone6));
+        apps1.add(new App("Apple IPhone X","AED 2199.00","10 Online Store(s)",R.drawable.appleiphone));
+        apps1.add(new App("iPhone 7 Plus-32 Gb,Gold","AED 34229.00","16 Online Store(s)",R.drawable.newmobile));
+        apps1.add(new App("Apple iPhone 6,32 GB","AED 5110.60","18 Online Store(s)",R.drawable.appleiphone6));
+
+        return apps1;
+    }
+
+
+
+    private List<App> getApps2(){
+        List<App> apps2=new ArrayList<>();
+
+        apps2.add(new App("Canon EOS 6D ","AED 6089.00","4 Online Store(s)",R.drawable.canon1));
+        apps2.add(new App("Canon EOS 800D","AED 34229.00","4 Online Store(s)",R.drawable.camera));
+        apps2.add(new App("Canon GIX ll","AED 1795.60","4 Online Store(s)",R.drawable.canon));
+        apps2.add(new App("Canon EOS 6D ","AED 6089.00","4 Online Store(s)",R.drawable.canon1));
+        apps2.add(new App("Canon EOS 800D","AED 34229.00","4 Online Store(s)",R.drawable.camera));
+        apps2.add(new App("Canon GIX ll","AED 1795.60","4 Online Store(s)",R.drawable.canon));
+        apps2.add(new App("Canon EOS 6D ","AED 6089.00","4 Online Store(s)",R.drawable.canon1));
+        apps2.add(new App("Canon EOS 800D","AED 34229.00","4 Online Store(s)",R.drawable.camera));
+        apps2.add(new App("Canon GIX ll","AED 1795.60","4 Online Store(s)",R.drawable.canon));
+
+        return apps2;
+    }
+
+
+    private List<App> getApps3(){
+        List<App> apps3=new ArrayList<>();
+
+        apps3.add(new App("Apple Ipad Mini 3","AED 1060.00","15 Online Store(s)",R.drawable.applemini1));
+        apps3.add(new App("Apple iPad Mini 3 Tablet-7.9","AED 1049.00","17 Online Store(s)",R.drawable.applimini11));
+        apps3.add(new App("Apple iPad Mini 2","AED 1179.60","22 Online Store(s)",R.drawable.applemini));
+        apps3.add(new App("Canon EOS 6D ","AED 6089.00","4 Online Store(s)",R.drawable.canon1));
+        apps3.add(new App("Apple Ipad Mini 3","AED 1060.00","15 Online Store(s)",R.drawable.applemini1));
+        apps3.add(new App("Apple iPad Mini 3 Tablet-7.9","AED 1049.00","17 Online Store(s)",R.drawable.applimini11));
+        apps3.add(new App("Apple iPad Mini 2","AED 1179.60","22 Online Store(s)",R.drawable.applemini));
+        apps3.add(new App("Apple Ipad Mini 3","AED 1060.00","15 Online Store(s)",R.drawable.applemini1));
+        apps3.add(new App("Apple iPad Mini 3 Tablet-7.9","AED 1049.00","17 Online Store(s)",R.drawable.applimini11));
+        apps3.add(new App("Apple iPad Mini 2","AED 1179.60","22 Online Store(s)",R.drawable.applemini));
+
+        return apps3;
+    }
+
+
+
+    private List<App> getApps4(){
+        List<App> apps4=new ArrayList<>();
+
+        apps4.add(new App("Apple Ipad Mini 3","AED 1060.00","15 Online Store(s)",R.drawable.applemini1));
+        apps4.add(new App("Apple iPad Mini 3 Tablet-7.9","AED 1049.00","17 Online Store(s)",R.drawable.applimini11));
+        apps4.add(new App("Apple iPad Mini 2","AED 1179.60","22 Online Store(s)",R.drawable.applemini));
+        apps4.add(new App("Canon EOS 6D ","AED 6089.00","4 Online Store(s)",R.drawable.canon1));
+        apps4.add(new App("Apple Ipad Mini 3","AED 1060.00","15 Online Store(s)",R.drawable.applemini1));
+
+
+        return apps4;
     }
 
 //    @Override

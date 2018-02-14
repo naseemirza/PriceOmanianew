@@ -9,7 +9,7 @@
     tools:context=".MainActivity" >
     <ListView
         android:id="@+id/listView"
-        android:dividerHeight="7.0sp"
+        android:dividerHeight="6.0sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         >

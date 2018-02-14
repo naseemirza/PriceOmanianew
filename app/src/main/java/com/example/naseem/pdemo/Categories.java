@@ -13,11 +13,11 @@ import java.util.List;
 public class Categories extends AppCompatActivity {
 
     String categoriesItems[] = {
-            "ListView Title 1", "ListView Title 2", "ListView Title 3", "ListView Title 4",
-            "ListView Title 5", "ListView Title 6", "ListView Title 7", "ListView Title 8",
-            "ListView Title 9", "ListView Title 10", "ListView Title 11", "ListView Title 12",
-            "ListView Title 5", "ListView Title 6", "ListView Title 7", "ListView Title 8",
-            "ListView Title 9", "ListView Title 10", "ListView Title 11", "ListView Title 12",
+            "Mobile Phones (23026)", "Computers/Laptops (34838)", "Tablets (1437)", "Cameras (15610)",
+            "TV Video (2700)", "Audio (1525)", "Video Games (1499)", "Kids & Babies (27359)",
+            "Men Fashion (13164)", "Eyewear (11946)", "Watches (15670)", "Women Fashion (44105)",
+            "Home Appliances (3149)", "Home & Furniture (30479)", "Office Supplies (3043)", "Sports & Fitness (13383)",
+            "Click for more categories",
     };
 
     Integer image_id[] = {
@@ -25,7 +25,7 @@ public class Categories extends AppCompatActivity {
             R.drawable.send_us_feedback, R.drawable.login, R.drawable.categories, R.drawable.offer,
             R.drawable.categories, R.drawable.login, R.drawable.favorite, R.drawable.my_ad,
             R.drawable.send_us_feedback, R.drawable.login, R.drawable.categories, R.drawable.offer,
-            R.drawable.categories, R.drawable.login, R.drawable.favorite, R.drawable.my_ad,
+            R.drawable.categories,
     };
 
     @Override
