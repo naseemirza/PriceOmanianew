@@ -17,15 +17,15 @@ public class Categories extends AppCompatActivity {
             "TV Video (2700)", "Audio (1525)", "Video Games (1499)", "Kids & Babies (27359)",
             "Men Fashion (13164)", "Eyewear (11946)", "Watches (15670)", "Women Fashion (44105)",
             "Home Appliances (3149)", "Home & Furniture (30479)", "Office Supplies (3043)", "Sports & Fitness (13383)",
-            "Click for more categories",
+
     };
 
     Integer image_id[] = {
-            R.drawable.categories, R.drawable.login, R.drawable.favorite, R.drawable.my_ad,
-            R.drawable.send_us_feedback, R.drawable.login, R.drawable.categories, R.drawable.offer,
-            R.drawable.categories, R.drawable.login, R.drawable.favorite, R.drawable.my_ad,
-            R.drawable.send_us_feedback, R.drawable.login, R.drawable.categories, R.drawable.offer,
-            R.drawable.categories,
+            R.drawable.mobile_phones, R.drawable.computers, R.drawable.tablets, R.drawable.cameras,
+            R.drawable.tv_video, R.drawable.audio, R.drawable.video_games, R.drawable.kids_babies,
+            R.drawable.men_fashion, R.drawable.eyewear, R.drawable.watches, R.drawable.women_fashion,
+            R.drawable.home_appliances, R.drawable.home_furniture, R.drawable.office_supplies, R.drawable.sports_fitness,
+
     };
 
     @Override

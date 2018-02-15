@@ -124,21 +124,6 @@ public class MainActivity extends AppCompatActivity
 
 
 
-//        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-//        setSupportActionBar(toolbar);
-
-//      scrollView = (NestedScrollView) findViewById (R.id.nestdscrolview);
-//        scrollView.setFillViewport (true);
-
-//        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-//        fab.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-//                        .setAction("Action", null).show();
-//            }
-//        });
-
 
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -179,7 +164,7 @@ public class MainActivity extends AppCompatActivity
         List<App> apps1=getApps1();
         List<App> apps2=getApps2();
         List<App> apps3=getApps3();
-        List<App> apps4=getApps4();
+
 
         SnapAdapter snapAdapter=new SnapAdapter();
         if(mHorizontal){
@@ -188,7 +173,7 @@ public class MainActivity extends AppCompatActivity
             snapAdapter.addSnap(new Snap(Gravity.START,"APPLE IPHONES",apps1));
             snapAdapter.addSnap(new Snap(Gravity.END,"CAMERAS",apps2));
             snapAdapter.addSnap(new Snap(Gravity.END,"TABLETS",apps3));
-            snapAdapter.addSnap(new Snap(Gravity.END,"LATEST ARTICLES",apps4));
+
             //snapAdapter.addSnap(new Snap(Gravity.CENTER,"Apple Products",apps));
         }else {
 
@@ -273,31 +258,6 @@ public class MainActivity extends AppCompatActivity
 
 
 
-    private List<App> getApps4(){
-        List<App> apps4=new ArrayList<>();
-
-        apps4.add(new App("Apple Ipad Mini 3","AED 1060.00","15 Online Store(s)",R.drawable.applemini1));
-        apps4.add(new App("Apple iPad Mini 3 Tablet-7.9","AED 1049.00","17 Online Store(s)",R.drawable.applimini11));
-        apps4.add(new App("Apple iPad Mini 2","AED 1179.60","22 Online Store(s)",R.drawable.applemini));
-        apps4.add(new App("Canon EOS 6D ","AED 6089.00","4 Online Store(s)",R.drawable.canon1));
-        apps4.add(new App("Apple Ipad Mini 3","AED 1060.00","15 Online Store(s)",R.drawable.applemini1));
-
-
-        return apps4;
-    }
-
-//    @Override
-//    public boolean onMenuItemClick(MenuItem item) {
-//
-//        if (item.getItemId()==R.id.LayoutType){
-//            mHorizontal=!mHorizontal;
-//            setupAdapter();
-//            item.setTitle((mHorizontal ?"Vertical":"Horizontal"));
-//
-//        }
-//        return false;
-//
-//    }
 
     public class MyTimerTask extends TimerTask {
         @Override
@@ -361,9 +321,13 @@ public class MainActivity extends AppCompatActivity
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
+
         int id = item.getItemId();
 
         if (id == R.id.nav_login) {
+            startActivity(new Intent(MainActivity.this,LoginActivity.class));
+
+
             // Handle the camera action
         } else if (id == R.id.nav_wallet) {
 

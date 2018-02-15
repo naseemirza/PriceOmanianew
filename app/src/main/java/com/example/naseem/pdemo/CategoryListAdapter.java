@@ -18,12 +18,16 @@ public class CategoryListAdapter extends ArrayAdapter<String> {
     Integer[] image_id;
     Context context;
 
+
+
+
     public CategoryListAdapter(Activity context, Integer[] image_id, String[] text){
         super(context, R.layout.list_row, text);
         // TODO Auto-generated constructor stub
         this.color_names = text;
         this.image_id = image_id;
         this.context = context;
+
     }
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
@@ -32,10 +36,14 @@ public class CategoryListAdapter extends ArrayAdapter<String> {
                 .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View single_row = inflater.inflate(R.layout.list_row, null,
                 true);
+
         TextView textView = (TextView) single_row.findViewById(R.id.textView);
         ImageView imageView = (ImageView) single_row.findViewById(R.id.imageView);
         textView.setText(color_names[position]);
         imageView.setImageResource(image_id[position]);
+
+
+
         return single_row;
     }
 }
