@@ -1,11 +1,16 @@
 package com.example.naseem.pdemo;
 
+import android.content.Context;
+import android.content.Intent;
+import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.List;
 
@@ -16,6 +21,9 @@ import java.util.List;
 public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
     private List<App> mApps;
     private boolean mHorizontal;
+
+
+
     private boolean mPager;
 
     public Adapter(boolean horizontal,boolean pager,List<App> apps){
@@ -61,12 +69,20 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
         return mApps.size();
     }
 
+
+
+
+
+
     public class ViewHolder extends RecyclerView.ViewHolder {
 
         public ImageView imageview;
         public TextView nameTextview;
         public TextView onlinestoreTextview2;
         public TextView priceTextview1;
+
+
+
 
         public ViewHolder(View itemView) {
 
@@ -76,6 +92,11 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
             onlinestoreTextview2=(TextView) itemView.findViewById(R.id.onlinestoreTextview2);
             priceTextview1=(TextView) itemView.findViewById(R.id.priceTextview1);
 
+
+
+
         }
+
     }
+
 }

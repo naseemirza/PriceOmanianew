@@ -11,8 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
-            android:label="@string/app_name"
+            android:name=".SplashActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,13 +20,31 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Categories"
+            android:name=".CategoryItems.Categories"
             android:parentActivityName=".MainActivity" />
-        <activity android:name=".LoginActivity"
+        <activity
+            android:name=".LoginActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".SignupActivity"
+            android:parentActivityName=".LoginActivity" />
+        <activity
+            android:name=".MobilePhonesItems.MobilePhones"
+            android:parentActivityName=".CategoryItems.Categories" />
+        <activity
+            android:name=".Computers"
+            android:parentActivityName=".CategoryItems.Categories" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".CardDetails.CardDetails"
             android:parentActivityName=".MainActivity"
-            ></activity>
-        <activity android:name=".SignupActivity"
-           android:parentActivityName=".LoginActivity" ></activity>
+
+
+            >
+
+        </activity>
     </application>
 
 </manifest>

@@ -6,6 +6,8 @@
 
 
 
+
+
     <color name="purple">#8a2be2</color>
     <color name="colorBlack">#000</color>
     <color name="colorWhite">#FFFF</color>
@@ -13,4 +15,7 @@
     <color name="lightgreen">#a4c639</color>
     <color name="green">#5ec639</color>
     <color name="lightpurple">#663096</color>
+
+
+
 </resources>

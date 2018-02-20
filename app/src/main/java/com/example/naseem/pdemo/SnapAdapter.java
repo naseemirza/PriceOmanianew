@@ -1,5 +1,8 @@
 package com.example.naseem.pdemo;
 
+import android.content.Context;
+import android.content.Intent;
+import android.support.v7.widget.CardView;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.PagerSnapHelper;
 import android.support.v7.widget.RecyclerView;
@@ -20,6 +23,8 @@ import java.util.ArrayList;
  */
 
 public class SnapAdapter extends RecyclerView.Adapter<SnapAdapter.ViewHolder> implements GravitySnapHelper.SnapListener {
+
+
 
     public static final int VERTICAL=0;
     public static final int HORIZONTAL=1;
@@ -110,6 +115,8 @@ public class SnapAdapter extends RecyclerView.Adapter<SnapAdapter.ViewHolder> im
         holder.recyclerview.setAdapter(new Adapter(snap.getGravity()==Gravity.START||snap.getGravity()==Gravity.END
                 ||snap.getGravity()==Gravity.CENTER_HORIZONTAL,snap.getGravity()==Gravity.CENTER,snap.getApps()));
 
+
+
     }
 
     @Override
@@ -127,11 +134,17 @@ public class SnapAdapter extends RecyclerView.Adapter<SnapAdapter.ViewHolder> im
 
         public TextView snapTextview;
         public RecyclerView recyclerview;
+        public CardView crd;
         public ViewHolder(View itemView) {
             super(itemView);
 
             snapTextview=(TextView)itemView.findViewById(R.id.snapTextview);
             recyclerview=(RecyclerView)itemView.findViewById(R.id.recyclerview);
+
+
+
+
+
         }
     }
 }

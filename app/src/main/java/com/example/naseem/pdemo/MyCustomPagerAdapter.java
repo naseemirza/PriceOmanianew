@@ -8,6 +8,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
+import com.example.naseem.pdemo.R;
+
 
 /**
  * Created by Naseem on 01-02-2018.

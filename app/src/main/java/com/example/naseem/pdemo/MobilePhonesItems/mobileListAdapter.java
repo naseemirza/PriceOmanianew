@@ -1,4 +1,4 @@
-package com.example.naseem.pdemo;
+package com.example.naseem.pdemo.MobilePhonesItems;
 
 import android.app.Activity;
 import android.content.Context;
@@ -9,23 +9,23 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.naseem.pdemo.R;
+
 /**
- * Created by Naseem on 13-02-2018.
+ * Created by Naseem on 16-02-2018.
  */
 
-public class CategoryListAdapter extends ArrayAdapter<String> {
-    String[] color_names;
-    Integer[] image_id;
+public class mobileListAdapter extends ArrayAdapter<String> {
+
+    String[] category_itme;
+
     Context context;
 
-
-
-
-    public CategoryListAdapter(Activity context, Integer[] image_id, String[] text){
+    public mobileListAdapter(Activity context, String[] text){
         super(context, R.layout.list_row, text);
         // TODO Auto-generated constructor stub
-        this.color_names = text;
-        this.image_id = image_id;
+        this.category_itme = text;
+
         this.context = context;
 
     }
@@ -38,12 +38,13 @@ public class CategoryListAdapter extends ArrayAdapter<String> {
                 true);
 
         TextView textView = (TextView) single_row.findViewById(R.id.textView);
-        ImageView imageView = (ImageView) single_row.findViewById(R.id.imageView);
-        textView.setText(color_names[position]);
-        imageView.setImageResource(image_id[position]);
+
+        textView.setText(category_itme[position]);
+
 
 
 
         return single_row;
     }
+
 }
